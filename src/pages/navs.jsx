@@ -1,6 +1,8 @@
 import React from "react";
 import { FiMinus } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
+import { BsPersonFill } from "react-icons/bs";
+
 import "../style/navs.css";
 function Navs() {
   return (
@@ -51,10 +53,18 @@ function Navs() {
                 </NavLink>
               </li>
             </ul>
-
           </div>
-
-          <button className="btn btn-outline-success"><b>Kirish</b></button>
+          <NavLink to="#">
+            <button className="btn btn-success savol">
+              <b>Savol Yuborish</b>
+            </button>
+          </NavLink>
+          <NavLink to='#' className='kirish'>
+            <button className="btn btn-outline-success d-flex">
+              <BsPersonFill fontSize="20px" />
+              <b className="pl-1">Kirish</b>
+            </button>
+          </NavLink>
         </nav>
       </div>
       <hr className="m-0" />
