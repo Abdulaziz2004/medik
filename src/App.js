@@ -16,7 +16,7 @@ function App() {
       <Navs />
       <Routes>
         <Route path="*" element={<NotFaunt />} />
-        <Route path="Home" element={<HomePage />}>
+        <Route path="/" element={<HomePage />}>
           <Route path="shifokorlar" element={<Shifokorlar />} />
           <Route path="xizmatlar" element={<Xizmarlar />} />
           <Route path="yonalish" element={<Yonalish />} />

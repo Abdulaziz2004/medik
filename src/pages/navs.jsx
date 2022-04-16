@@ -36,7 +36,7 @@ function Navs() {
           >
             <ul className="navbar-nav">
               <li className="nav-item">
-                <NavLink className="nav-link" to="/Home">
+                <NavLink className="nav-link" to="/">
                   Bosh Sahifa
                 </NavLink>
               </li>
