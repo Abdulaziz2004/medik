@@ -51,10 +51,13 @@ function Navs() {
                 </NavLink>
               </li>
             </ul>
+
           </div>
+
+          <button className="btn btn-outline-success"><b>Kirish</b></button>
         </nav>
       </div>
-      <hr />
+      <hr className="m-0" />
     </>
   );
 }
