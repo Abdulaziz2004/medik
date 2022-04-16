@@ -59,7 +59,7 @@ function Navs() {
               <b>Savol Yuborish</b>
             </button>
           </NavLink>
-          <NavLink to='#' className='kirish'>
+          <NavLink to="#" className="kirish">
             <button className="btn btn-outline-success d-flex">
               <BsPersonFill fontSize="20px" />
               <b className="pl-1">Kirish</b>
