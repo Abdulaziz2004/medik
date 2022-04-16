@@ -13,7 +13,7 @@ import Yonalish from './pages/yonalish';
 function App() {
   return (
     <div className="App">
-        <Navbar/>
+        <Navs/>
       <Routes>
         <Route path="*" element={<NotFaunt />} />
         <Route path="/" element={<HomePage />}>
