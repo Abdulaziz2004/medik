@@ -1,0 +1,23 @@
+*{
+    font-family: "SFProDisplay",sans-serif !important;
+}
+.container{
+    max-width: 1240px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+.navbar{
+    display: flex;
+   align-items: center;
+}
+.navbar-toggler .burger{
+    display: grid;
+}
+.navbar-toggler .burger span{
+    height: 10px;
+
+}
