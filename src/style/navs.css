@@ -7,12 +7,17 @@
     margin-right: auto;
     margin-left: auto;
 }
-
-
-
+.navbar-nav .nav-item a{
+    color: black;
+    font-weight: 600;
+}
+.navbar-nav .nav-item{
+  padding: 0 20px;
+}
 .navbar{
     display: flex;
    align-items: center;
+
 }
 .navbar-toggler .burger{
     display: grid;
