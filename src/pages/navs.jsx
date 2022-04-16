@@ -7,7 +7,6 @@ import "../style/navs.css";
 function Navs() {
   return (
     <>
-      <h2>Hello</h2>
       <div className="container">
         <nav className="navbar navbar-expand-md bg-white navbar-white">
           <a className="navbar-brand" href="#">
