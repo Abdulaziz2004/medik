@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Dolzarb from "./pages/dolzarbpages";
 import HomePage from "./pages/HomePage";
 import Interyuv from "./pages/interyuv";
+import InteryuvDesscription from "./pages/InteryuvDesscription";
 import Navs from "./pages/navs";
 import NotFaunt from "./pages/notFaunt";
 import Shifokorlar from "./pages/shifokorlar";
@@ -22,6 +23,7 @@ function App() {
           <Route path="yonalish" element={<Yonalish />} />
         </Route>
         <Route path="interyuv" element={<Interyuv />} />
+        <Route path="/interyuv/:slug" element={<InteryuvDesscription />} />
         <Route path="dolzarb" element={<Dolzarb />} />
       </Routes>
         <Footer/>

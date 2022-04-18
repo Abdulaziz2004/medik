@@ -16,7 +16,7 @@ import Tiktok from "../assets/tiktok.svg";
 const Footer = () => {
   return (
     <Wrapper>
-      <hr />
+      <hr style={{marginTop: 0}}/>
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
