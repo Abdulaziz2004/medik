@@ -36,7 +36,7 @@ function Navs() {
             className="collapse navbar-collapse justify-content-center"
             id="collapsibleNavbar"
           >
-            <ul className="navbar-nav">
+            <ul className="navbar-nav ml-5">
               <li className="nav-item">
                 <NavLink className="nav-link" to="/">
                   Bosh Sahifa
@@ -54,12 +54,31 @@ function Navs() {
               </li>
             </ul>
           </div>
-          <NavLink to="#">
-            <button className="btn btn-success savol">
+          <div className="dropdown mr-3">
+            <button type="button" className="btn" data-toggle="dropdown">
+              Ўзбекча
+            </button>
+            <div className="dropdown-menu ">
+              <div className="row mx-0 ">
+                <div className="col-lg-6">
+                  <a className="dropdown-item" href="#">
+                  Русский
+                  </a>
+                </div>
+                <div className="col-lg-6">
+                  <a className="dropdown-item" href="#">
+                  Ўзбекча
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <NavLink to="savol">
+            <button className="btn btn-success savol mr-3 px-3 py-2">
               <b>Savol Yuborish</b>
             </button>
           </NavLink>
-          <NavLink to="#" className="kirish">
+          <NavLink to="kirish" className="kirish">
             <button className="btn btn-outline-success d-flex">
               <BsPersonFill fontSize="20px" />
               <b className="pl-1">Kirish</b>
