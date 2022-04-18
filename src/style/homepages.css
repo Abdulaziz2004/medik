@@ -1,7 +1,79 @@
+
 .container{
     max-width: 1240px;
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+}
+.nav .nav-item{
+    padding: 5px 0;
+    
+}
+.nav .dropdown button{
+    border: none;
+}
+.btn.focus, .btn:focus{
+    color: #D7D7D7;
+    box-shadow: none !important;
+    outline: 0 !important;
+}
+.dropdown-item {
+    padding: 0 !important;
+}
+.nav  .dropdown-item::after{
+    content: " ";
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.dropdown-menu{
+    position: absolute;
+    padding: 20px 0;
+    left: -100px;
+    transition: all .2s ease;
+    font-weight: 600;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+}
+.dropdown-item:hover{
+ background-color: white;
+}
+.dropdown-menu::before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    transform: rotate(-45deg);
+    background-color: white;
+    border-right: 1px solid rgba(0,0,0,.15);
+    border-top: 1px solid rgba(0,0,0,.15);
+    position: absolute;
+    right: 26px;
+    top: -8px;
+}
+.nav button{
+    border-radius: 15px;  
+    font-weight: 500;
+    font-family: "SFProDisplay",sans-serif;
+    font-size: 16px;
+    padding: 9px 25px;
+    text-align: left;
+    width: 100%;
+    background-color: #E5F9F2;
+}
+.nav button:focus{
+    box-shadow: none;
+    color: black;
+}
+
+.nav button:hover{
+    color: white;
+    transition: all 0.2s ease;
+    background-color: #16B67F;
+}
+.nav .badge{
+    width: 35px;
+    border-radius: 15px;
 }
 
