@@ -8,6 +8,11 @@ import { FaFacebookF } from "react-icons/fa";
 import { BsTwitter } from "react-icons/bs";
 import { FaTelegramPlane } from "react-icons/fa";
 
+import RightImg from "../assets/rightImg.jpg"
+
+import SimpleSlider from "../components/Corusel";
+
+
 const InteryuvDesscription = () => {
   function myFunction() {
     var copyText = document.getElementById("myInput");
@@ -27,8 +32,52 @@ const InteryuvDesscription = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-3 left">
-            <p>Songi yaniliklar</p>
+            <h2>СЎНГГИ ЯНГИЛИКЛAР</h2>
+
+            <div className="left-links">
+                <a href="#">
+                  <p>Бу ҳолатда онлайн ташхис қўйиб бўлмайди!</p>
+                  <span>14:09 / 18.04.2022</span>
+                </a>
+                <div className="line"></div>
+            </div>
+            <div className="left-links">
+                <a href="#">
+                  <p>Бачадон найи шамолласа...</p>
+                  <span>14:09 / 18.04.2022</span>
+                </a>
+                <div className="line"></div>
+            </div>
+            <div className="left-links">
+                <a href="#">
+                  <p>Қайси маҳсулотлар иммунитетни оширади?</p>
+                  <span>14:09 / 18.04.2022</span>
+                </a>
+                <div className="line"></div>
+            </div>
+            <div className="left-links">
+                <a href="#">
+                  <p>Нишолданинг фойдали хусусиятлари ҳақида биласизми?</p>
+                  <span>14:09 / 18.04.2022</span>
+                </a>
+                <div className="line"></div>
+            </div>
+            <div className="left-links">
+                <a href="#">
+                  <p>Организмни антибиотиклардан ҳимояловчи бактериялар яратилди</p>
+                  <span>14:09 / 18.04.2022</span>
+                </a>
+                <div className="line"></div>
+            </div>
+            <div className="left-links">
+                <a href="#">
+                  <p>Брутселёз одамлар орқали юқадими?</p>
+                  <span>14:09 / 18.04.2022</span>
+                </a>
+                <div className="line"></div>
+            </div>
           </div>
+
           <div className="col-lg-6 middle">
             <div className="card">
               {cartData
@@ -107,13 +156,15 @@ const InteryuvDesscription = () => {
           </div>
 
           <div className="col-lg-3 right">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-            laborum perferendis corrupti at, repellendus repudiandae officiis
-            necessitatibus reiciendis quod omnis nihil architecto blanditiis
-            dolores iste labore beatae quo doloremque ratione.
+            <a href="https://formulife.uz/">
+              <img src={RightImg} alt="" />
+            </a>
+            
           </div>
         </div>
       </div>
+
+      <SimpleSlider/>
     </Wrapper>
   );
 };
@@ -124,13 +175,55 @@ const Wrapper = styled.div`
   .container {
     .row {
       .left {
+        padding: 25px 30px 0 0;
+        h2{
+          font-weight: 700;
+          margin-bottom: 25px;
+          font-size: 16px;
+        }
+        .left-links{
+          transition: all .2s linear;
+          a{
+            text-decoration: none;
+            
+            p{
+              font-weight: 500;
+              margin-bottom: 10px;
+              color: #000;
+              font-size: 16px;
+
+              &:hover{
+                text-decoration: underline;
+              }
+            }
+            span{
+              font-size: 14px;
+              color: rgba(0,0,0,.6);
+              margin-top: 0;
+            }
+          }
+
+          .line{
+            margin-left: 30px;
+            width: 150px;
+            height: 2px;
+            background: #f9f9f9;
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
+
+          &:hover{
+              margin-left: 10px;
+              cursor: pointer;
+            }
+        }
       }
 
       .middle {
         border: 1px solid #c5baba7f;
         border-top: none;
         border-bottom: none;
-        padding: 15px;
+        padding: 25px 15px 15px 15px;
         .card {
           border: none;
           margin-bottom: 50px;
@@ -138,6 +231,13 @@ const Wrapper = styled.div`
       }
 
       .right {
+
+        a{
+          img{
+            width: 100%;
+            margin-top: 25px;
+          }
+        }
       }
     }
   }
