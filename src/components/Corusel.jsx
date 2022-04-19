@@ -34,6 +34,7 @@ export default class SimpleSlider extends Component {
           <a href="#">
             <img src={CoruselImg} alt="" />
             <div className="text">
+              <h1>Ishladimi!!!!!</h1>
               <h4>Бу ҳолатда онлайн ташхис қўйиб бўлмайди!</h4>
               <p><AiOutlineCalendar/> <span>19:50 / 18.04.2022</span> </p>
             </div>
