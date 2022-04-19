@@ -35,7 +35,7 @@ export default class SimpleSlider extends Component {
             <img src={CoruselImg} alt="" />
             <div className="text">
               <h1>Ishladimi!!!!!</h1>
-              <h4>Бу ҳолатда онлайн ташхис қўйиб бўлмайди!</h4>
+              <h4>Бу ҳолатда онлайн ташхи қўйиб бўлмайди!</h4>
               <p><AiOutlineCalendar/> <span>19:50 / 18.04.2022</span> </p>
             </div>
           </a>
@@ -50,6 +50,7 @@ export default class SimpleSlider extends Component {
           <a href="#">
             <img src={CoruselImg3} alt="" />
             <div className="text">
+            <h1>Ishla!!!!!</h1>
               <h4>Қайси маҳсулотлар иммунитетни оширади? 10:58 / 18.04.2022</h4>
               <p><AiOutlineCalendar/> <span>19:50 / 18.04.2022</span> </p>
             </div>
